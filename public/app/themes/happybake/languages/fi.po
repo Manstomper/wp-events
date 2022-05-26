@@ -1,0 +1,100 @@
+# Copyright (C) 2022 Anonymous
+# This file is distributed under the Public domain.
+msgid ""
+msgstr ""
+"Project-Id-Version: RiG Demo 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/demo\n"
+"POT-Creation-Date: 2022-03-25T15:38:28+00:00\n"
+"PO-Revision-Date: 2022-03-25 17:38+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Domain: rig\n"
+
+#. Theme Name of the theme
+msgid "RiG Demo"
+msgstr ""
+
+#. Author of the theme
+msgid "Manstomper"
+msgstr ""
+
+#: blocks/accordion/config.php:10
+msgid "Accordion"
+msgstr ""
+
+#: blocks/banner/config.php:10
+msgid "Banner"
+msgstr "Banneri"
+
+#: blocks/boxes/config.php:10
+msgid "Boxes"
+msgstr "Laatikot"
+
+#: blocks/person/config.php:10 content-types/person/settings.php:10
+msgid "Person"
+msgstr "Henkilö"
+
+#: blocks/persons/config.php:10 content-types/person/settings.php:9
+msgid "Persons"
+msgstr "Henkilöt"
+
+#: content-types/event/settings.php:9
+msgid "Events"
+msgstr "Tapahtumat"
+
+#: content-types/event/settings.php:10
+msgid "Event"
+msgstr "Tapahtuma"
+
+#: content-types/event/settings.php:21
+msgid "Event types"
+msgstr "Tapahtumatyypit"
+
+#: content-types/event/settings.php:22
+msgid "Event type"
+msgstr "Tapahtumatyyppi"
+
+#: content-types/event/settings.php:34
+msgid "Event footer"
+msgstr "Tapahtuman footer"
+
+#: inc/admin.php:26
+msgid "Theme"
+msgstr "Teema"
+
+#: inc/settings.php:15
+msgid "Main menu"
+msgstr "Päävalikko"
+
+#: assets/dist/admin.js:15 assets/dist/admin.js:46
+#: assets/src/js/admin/blocks/sample.js:9
+#: assets/src/js/admin/blocks/sample.js:40
+msgid "Sample block"
+msgstr "Esimerkkilohko"
+
+#: assets/dist/admin.js:187 assets/src/js/admin/formats-styles.js:11
+msgid "Default"
+msgstr "Oletus"
+
+#: assets/dist/admin.js:192 assets/src/js/admin/formats-styles.js:16
+msgid "Collapse"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark"
+msgstr "Tumma"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light"
+msgstr "Vaalea"
+
+#~ msgid "This is a panel body"
+#~ msgstr "Tämä on paneelin sisältö"

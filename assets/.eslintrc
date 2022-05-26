@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "vue/setup-compiler-macros": true
+  },
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended"],
+  "plugins": ["vue"],
+  "rules": {
+    "vue/html-self-closing": 0,
+    "vue/max-attributes-per-line": 0,
+    "vue/singleline-html-element-content-newline": 0
+  }
+}

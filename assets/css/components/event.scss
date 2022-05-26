@@ -1,0 +1,19 @@
+header.event {
+  padding: 15px;
+  text-align: center;
+}
+
+article.event {
+  > header {
+    text-align: center;
+
+    .hero {
+      height: 30vh;
+      min-height: 200px;
+      max-height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

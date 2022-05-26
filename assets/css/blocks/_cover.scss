@@ -1,0 +1,9 @@
+.wp-block-cover {
+  .has-dark-background-color ~ &__inner-container > *:not(.has-text-color) {
+    color: $color-light;
+  }
+
+  .has-light-background-color ~ &__inner-container > *:not(.has-text-color) {
+    color: $color-dark;
+  }
+}

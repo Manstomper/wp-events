@@ -1,0 +1,11 @@
+.wp-block-buttons {
+  margin-top: -4px;
+}
+
+.wp-block-button {
+  margin-top: 4px;
+
+  &__link {
+    @include button;
+  }
+}

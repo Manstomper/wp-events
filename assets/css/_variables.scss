@@ -1,0 +1,111 @@
+@use "sass:color" as color;
+
+/*
+Variables
+*/
+
+// Breakpoints
+$bp-small: 768px;
+$bp-medium: 992px;
+$bp-large: 1200px;
+
+// Container max width
+$max-width: 840px;
+$max-width-wide: 1100px;
+
+// Left and right padding
+$gutter: 16px;
+
+// Space between components
+$spacer: 30px;
+
+// Fonts
+$font-main: "Open Sans", sans-serif;
+$font-side: "Lora", sans-serif;
+
+// Colors
+$color-gray20: #333;
+$color-gray40: #666;
+$color-gray60: #999;
+$color-gray80: #ccc;
+$color-gray90: #e6e6e6;
+$color-light: #f0ede4;
+$color-dark: #222;
+$color-primary: #e7d7c1;
+$color-secondary: #735751;
+$color-tertiary: #bf4342;
+$color-link: #1f65de;
+$color-link-light: color.adjust($color-link, $lightness: 35%);
+$theme-colors: (
+  "light": (
+    "background": $color-light,
+    "text": $color-dark,
+    "link": $color-link,
+    "button": $color-dark,
+  ),
+  "dark": (
+    "background": $color-dark,
+    "text": $color-light,
+    "link": $color-link-light,
+    "button": $color-light,
+  ),
+  "primary": (
+    "background": $color-primary,
+    "text": $color-dark,
+    "link": $color-link,
+    "button": color.adjust($color-primary, $lightness: -15%),
+  ),
+  "secondary": (
+    "background": $color-secondary,
+    "text": $color-light,
+    "link": $color-link-light,
+    "button": color.adjust($color-secondary, $lightness: -15%),
+  ),
+  "tertiary": (
+    "background": $color-tertiary,
+    "text": $color-light,
+    "link": $color-link-light,
+    "button": color.adjust($color-tertiary, $lightness: -15%),
+  ),
+);
+
+/*
+Mixins
+*/
+
+@mixin button {
+  display: inline-block;
+  margin: 0;
+  padding: 14px 26px;
+  background-color: $color-dark;
+  color: $color-light;
+  border: none;
+  border-radius: 0;
+  font-size: inherit;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-light;
+    background-color: color.adjust($color-dark, $saturation: -10%, $lightness: 15%);
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+  }
+}
+
+@mixin element-spacing {
+  margin: 0 0 calc($spacer / 4);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $bp-medium) {
+    margin-bottom: calc($spacer / 2);
+  }
+}

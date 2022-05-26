@@ -1,0 +1,5 @@
+.wp-block-group {
+  > * {
+    @include element-spacing;
+  }
+}

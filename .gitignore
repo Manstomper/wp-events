@@ -1,0 +1,22 @@
+# Files with secrets
+.env
+
+# Junk files
+node_modules
+desktop.ini
+.DS_Store
+.netbeans.xml
+.sass_cache
+
+# Built files
+public/vendor
+public/wp
+public/.htaccess
+public/app/languages
+public/app/plugins/*
+!public/app/plugins/.gitkeep
+public/app/mu-plugins/*/
+public/app/upgrade
+public/app/uploads/*
+!public/app/uploads/.gitkeep
+public/app/themes/*/assets/dist

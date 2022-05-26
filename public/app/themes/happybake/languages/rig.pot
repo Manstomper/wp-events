@@ -1,0 +1,115 @@
+# Copyright (C) 2022 Manstomper
+# This file is distributed under the Public domain.
+msgid ""
+msgstr ""
+"Project-Id-Version: RiG Demo 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/demo\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-03-30T09:55:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: rig\n"
+
+#. Theme Name of the theme
+msgid "RiG Demo"
+msgstr ""
+
+#. Author of the theme
+msgid "Manstomper"
+msgstr ""
+
+#: blocks/accordion/config.php:10
+msgid "Accordion"
+msgstr ""
+
+#: blocks/banner/config.php:10
+msgid "Banner"
+msgstr ""
+
+#: blocks/boxes/config.php:10
+msgid "Boxes"
+msgstr ""
+
+#: blocks/person/config.php:10
+#: content-types/person/settings.php:10
+msgid "Person"
+msgstr ""
+
+#: blocks/persons/config.php:10
+#: content-types/person/settings.php:9
+msgid "Persons"
+msgstr ""
+
+#: content-types/event/settings.php:9
+msgid "Events"
+msgstr ""
+
+#: content-types/event/settings.php:10
+msgid "Event"
+msgstr ""
+
+#: content-types/event/settings.php:21
+msgid "Event types"
+msgstr ""
+
+#: content-types/event/settings.php:22
+msgid "Event type"
+msgstr ""
+
+#: content-types/event/settings.php:34
+msgid "Event footer"
+msgstr ""
+
+#: global/admin.php:26
+msgid "Theme"
+msgstr ""
+
+#: global/settings.php:16
+msgid "Main menu"
+msgstr ""
+
+#: assets/dist/admin.js:17
+#: assets/dist/admin.js:48
+#: assets/src/js/admin/blocks/sample.js:11
+#: assets/src/js/admin/blocks/sample.js:42
+msgid "Sample block"
+msgstr ""
+
+#: assets/dist/admin.js:105
+#: assets/src/js/admin/formats-styles.js:13
+msgid "Default"
+msgstr ""
+
+#: assets/dist/admin.js:110
+#: assets/src/js/admin/formats-styles.js:18
+msgid "Collapse"
+msgstr ""
+
+#: assets/dist/admin.js:117
+#: assets/src/js/admin/formats-styles.js:25
+msgid "Image on left"
+msgstr ""
+
+#: assets/dist/admin.js:122
+#: assets/src/js/admin/formats-styles.js:30
+msgid "Image on right"
+msgstr ""
+
+#: assets/dist/admin.js:126
+#: assets/src/js/admin/formats-styles.js:34
+msgid "Image above"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light"
+msgstr ""

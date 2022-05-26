@@ -1,0 +1,164 @@
+/*
+Typography and global styles
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-light;
+  color: $color-dark;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$headings: (
+  "h1": 30px,
+  "h2": 24px,
+  "h3": 18px,
+  "h4": 16px,
+  "h5": 14px,
+  "h6": 12px,
+);
+
+@each $tag, $size in $headings {
+  #{$tag} {
+    @include element-spacing;
+
+    font-family: $font-side;
+    font-size: $size;
+    line-height: calc($size + 6px);
+    font-weight: 400;
+
+    @media screen and (min-width: $bp-medium) {
+      font-size: $size + 4px;
+      line-height: calc($size + 10px);
+    }
+  }
+}
+
+p {
+  @include element-spacing;
+}
+
+ul,
+ol {
+  @include element-spacing;
+
+  li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+img,
+svg {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  margin: 0;
+}
+
+blockquote {
+  @include element-spacing;
+
+  padding: 0;
+}
+
+pre {
+  @include element-spacing;
+
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+button,
+input[type="submit"] {
+  @include button;
+}
+
+form {
+  @include element-spacing;
+}
+
+input,
+select,
+optgroup,
+textarea {
+  @include element-spacing;
+
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  transition: background-color 0.1s, color 0.1s;
+
+  &:hover {
+    color: $color-dark;
+  }
+}
+
+a:focus,
+a:active,
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: 1px solid orange;
+}
+
+/*
+Layout
+*/
+main > header,
+main > footer,
+main > aside,
+main > nav,
+main > * > *,
+main > * > .wp-block-table,
+main > * > .wp-block-pullquote,
+main > * > .wp-block-image,
+main > * > .wp-block-gallery,
+main > * > .wp-block-columns {
+  max-width: $max-width;
+  margin: calc($spacer / 1.5) auto 0;
+
+  @media screen and (min-width: $bp-medium) {
+    margin-top: $spacer;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &.alignwide {
+    max-width: $max-width-wide;
+  }
+
+  &.alignfull {
+    max-width: 100%;
+  }
+}

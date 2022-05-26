@@ -1,0 +1,73 @@
+{
+  "name": "rig/wp-demo",
+  "description": "A demo WordPress project",
+  "type": "project",
+  "version": "1.0.0",
+  "license": "Public domain",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    }
+  ],
+  "require": {
+    "php": "~8.0.0",
+    "composer/installers": "^2",
+    "johnpbloch/wordpress": "^5.9",
+
+    "koodimonni/composer-dropin-installer": "^1.3",
+    "koodimonni-language/core-fi": "^5.9",
+    "koodimonni-language/core-sv_se": "^5.9",
+
+    "wpackagist-plugin/advanced-custom-fields": "^5.12.2",
+    "wpackagist-plugin/wordpress-seo": "^18.9",
+    "wpackagist-plugin/safe-svg": "^2.0.1",
+    "wpackagist-plugin/polylang": "^3.2.3"
+  },
+  "config": {
+    "vendor-dir": "public/vendor",
+    "allow-plugins": {
+      "composer/installers": true,
+      "johnpbloch/wordpress-core": true,
+      "johnpbloch/wordpress-core-installer": true,
+      "koodimonni/composer-dropin-installer": true
+    }
+  },
+  "extra": {
+    "dropin-paths": {
+      "public/app/languages/": [
+        "vendor:koodimonni-language"
+      ],
+      "public/app/languages/plugins/": [
+        "vendor:koodimonni-plugin-language"
+      ]
+    },
+    "installer-paths": {
+      "public/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "public/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "public/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "public/wp"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "rm -rf ./public/wp/wp-content/themes/*/; rm -rf ./public/wp/wp-content/plugins/*/; rm -rf ./public/wp/wp-content/plugins/hello.php"
+    ]
+  }
+}

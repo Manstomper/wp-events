@@ -1,0 +1,36 @@
+version: "3.8"
+
+volumes:
+  wpdb:
+services:
+  nginx:
+    image: rig/nginx:$NGINX_VERSION
+    ports:
+      - "$NGINX_PORT:8080"
+    volumes:
+      - ./:/app-mount
+    depends_on:
+      - php
+      - mysql
+  php:
+    image: rig/php:$PHP_VERSION
+    environment:
+      - WP_ENV=development
+      - WP_HOME=$WP_HOME
+    volumes:
+      - ./:/app-mount
+  mysql:
+    image: mariadb:$MARIADB_VERSION
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=wordpress
+    volumes:
+      - wpdb:/var/lib/mysql
+  node:
+    image: node:$NODE_VERSION
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src
+    working_dir: /usr/src
+    command: sh -c "npm run dev"

@@ -1,0 +1,97 @@
+{
+    "key": "group_628f535843a20",
+    "title": "Event details",
+    "fields": [
+        {
+            "key": "field_628f5726a6951",
+            "label": "Start date",
+            "name": "start_date",
+            "type": "date_time_picker",
+            "instructions": "Must be in Finnish time.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "j.n.Y H:i",
+            "return_format": "U",
+            "first_day": 1
+        },
+        {
+            "key": "field_628f577ea6953",
+            "label": "End date",
+            "name": "end_date",
+            "type": "date_time_picker",
+            "instructions": "Must be in Finnish time.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "j.n.Y H:i",
+            "return_format": "U",
+            "first_day": 1
+        },
+        {
+            "key": "field_628f5779a6952",
+            "label": "Location",
+            "name": "location",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_628f579ea6954",
+            "label": "Price",
+            "name": "price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1653569477
+}

@@ -1,0 +1,10 @@
+.wp-block-quote {
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center;
+
+  @media screen and (min-width: $bp-large) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
