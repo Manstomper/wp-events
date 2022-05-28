@@ -20,10 +20,15 @@ function rig_rest_posts(\WP_REST_Request $request)
         'order' => $request->get_param('order') ?? 'DESC',
     ];
 
+    $lang = $request->get_param('lang');
     $page = $request->get_param('page');
     $postTypes = $request->get_param('postTypes');
     $taxQuery = $request->get_param('taxQuery');
     $metaQuery = $request->get_param('metaQuery');
+
+    if ($lang) {
+        $args['lang'] = sanitize_text_field($lang);
+    }
 
     if ($page) {
         $args['offset'] = $args['posts_per_page'] * ($page - 1);
@@ -77,6 +82,7 @@ function rig_rest_posts(\WP_REST_Request $request)
             'excerpt' => has_excerpt() ? get_the_excerpt() : '',
             'link' => get_the_permalink(),
             'terms' => $terms ?? [],
+            'acf' => get_fields(),
         ];
     }
 

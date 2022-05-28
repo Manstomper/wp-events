@@ -1,0 +1,32 @@
+.comment-respond {
+  min-width: 200px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+
+  form {
+    display: flex;
+    flex-flow: row wrap;
+
+    > p {
+      width: 100%;
+
+      &.comment-form-comment {
+        order: 3;
+      }
+
+      &.form-submit {
+        order: 4;
+      }
+
+      label {
+        display: block;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -40,6 +40,10 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('app', $uri . '/app.css');
     wp_enqueue_script('app',  $uri . '/app.js', [], false, true);
 
+    wp_localize_script('app', 'i18n', [
+        'lang' => rig_current_language(),
+    ]);
+
     wp_dequeue_style('global-styles');
 });
 

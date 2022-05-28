@@ -1,6 +1,8 @@
 body > footer {
-  background-color: $color-gray90;
+  padding: 15px;
   margin-top: calc($spacer / 1.5);
+  background-color: $color-gray90;
+  text-align: center;
 
   @media screen and (min-width: $bp-medium) {
     margin-top: $spacer;

@@ -7,4 +7,5 @@ app.config.errorHandler = (err) => {
   console.error(err);
 };
 
+app.provide('i18n', window.i18n);
 app.mount('[data-app="events"]');
