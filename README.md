@@ -4,8 +4,8 @@
 1. Clone this repository
 1. Open a terminal and cd into its directory
 1. Run `dev/init.sh`
-1. Prepare for a waiting game. Switch to the Docker Desktop app, click on the arrow next to the container and wait until composer is done (icon turns from green to grey) and npm install is done (log entry "webpack compiled successfully").
-1. Open the site in your browser
+1. Wait until all processes have completed. This could take several minutes.
+1. Look for the WP_HOME URL in .env and open it in your browser
 
 ## Now what?
 
